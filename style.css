@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: black;
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
@@ -60,8 +60,62 @@ body {
     min-height: 19rem;
 }
 
-.instagram-logo {
+.logo {
     height: 3rem;
+}
+
+.group h3 {
+    background-image: linear-gradient(to bottom, red, white);
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+a[name="drop"]{
+        border: none;
+        cursor: pointer;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    width: 250px; 
+}
+
+.drop-content img{
+        display: block;
+}
+
+.menu-drop{
+        position: relative;
+}
+
+.menu-drop:hover .drop-content{
+        display: block;
+}
+
+.group h3:hover .festa{
+    background-image: linear-gradient(to bottom, white, red);
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.group p {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .profile-photo {
@@ -75,6 +129,12 @@ body {
 .profile-photo img {
     height: 6rem;
 }
+
+.profile-photo img:hover{
+    height: 12rem;
+    transform: rotate(45deg);
+}
+
 
 .instagram-login {
     background-color: #0095f6;
@@ -94,6 +154,7 @@ body {
 
 .link-blue {
     color: #0095f6;
+    font-size:20px;
 }
 
 .get-the-app {
